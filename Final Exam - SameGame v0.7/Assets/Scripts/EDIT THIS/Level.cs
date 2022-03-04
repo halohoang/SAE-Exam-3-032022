@@ -42,6 +42,7 @@ public class Level
     /// The playground.
     /// </summary>
     ElementGrid grid;
+    Element element;
 
     //------STUDENTS IMPLEMENT FUNCTIONALITY BELOW---------------------------------------------------------------------
     //---Constructor---
@@ -62,6 +63,9 @@ public class Level
         points = 0;
 
         // ***** Students Start here ******
+        element = new Element(element.Visuals, element.ElementType);
+        
+
     }
 
 
