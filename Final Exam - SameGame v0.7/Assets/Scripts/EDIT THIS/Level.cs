@@ -43,6 +43,7 @@ public class Level
     /// </summary>
     ElementGrid grid;
     Element element;
+    
 
     //------STUDENTS IMPLEMENT FUNCTIONALITY BELOW---------------------------------------------------------------------
     //---Constructor---
@@ -65,6 +66,7 @@ public class Level
         // ***** Students Start here ******
         element = new Element(element.Visuals, element.ElementType);
         
+        
 
     }
 
@@ -79,6 +81,17 @@ public class Level
     public int HoverCells(Vector3 worldPosition)
     {
         // comment the out the following line
+        //Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mouseWorldPosition.z = Camera.main.nearClipPlane;
+        //RaycastHit2D hitData= Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y),Vector2.zero, 0, )
+        worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        worldPosition.z = Camera.main.nearClipPlane;
+        RaycastHit2D hitData = Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y), Vector2.zero, 0);
+        if (hitData)
+        {
+            element.Visuals = hitData.transform.gameObject;
+        }
+       
         return -99;
     }
 
@@ -91,6 +104,13 @@ public class Level
     public int SelectCells(Vector3 worldPosition)
     {
         // comment the out the following line
+        worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        worldPosition.z = Camera.main.nearClipPlane;
+        RaycastHit2D hitData = Physics2D.Raycast(new Vector2(worldPosition.x, worldPosition.y), Vector2.zero, 0);
+        if (hitData)
+        {
+            element.Visuals = hitData.transform.gameObject;
+        }
         return -99;
     }
 
@@ -102,6 +122,7 @@ public class Level
     public int[] GetAdjacentCellsOfSameType(int cellIndex)
     {
         // comment the out the following line
+
         return null;
     }
 
