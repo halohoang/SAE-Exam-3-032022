@@ -43,6 +43,8 @@ public class Level
     /// </summary>
     ElementGrid grid;
     Element element;
+    Element[] elements;
+    GameManager manager;
     
 
     //------STUDENTS IMPLEMENT FUNCTIONALITY BELOW---------------------------------------------------------------------
@@ -65,12 +67,15 @@ public class Level
 
         // ***** Students Start here ******
         element = new Element(element.Visuals, element.ElementType);
+        
 
-        //for (int x = 0; x < 16; x++)
-        //{
-        //    for (int y = 0; y < 16; y++)
-        //    grid.SetElement(,element);
-        //}
+        for (int x = 0; x < manager.numberOfCellsPerRow; x++)
+        {
+            for (int y = 1; y < manager.numberOfCellsPerColumn; y++)
+            {
+                //grid.SetElement(elements, element);
+            }
+        }
 
     }
 
