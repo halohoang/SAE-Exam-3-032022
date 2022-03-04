@@ -28,11 +28,11 @@ public class Level
     /// <summary>
     /// Returns the Playerscore (points the player has made).
     /// </summary>
-    int points;
+    int points;                                                                      // field
     /// <summary>
     /// Returns or set the Playerscore (points the player has made).
     /// </summary>
-    public int Points
+    public int Points                                                               // property
     {
         get { return points; }
         set { points = value; }
@@ -118,8 +118,10 @@ public class Level
     /// <param name="numElements">Number of elements.</param>
     public int CalculatePoints(int numElements)
     {
+
         // comment the out the following line
-        return -99;
+        points = (numElements - 2) * (numElements - 2);
+        return points;
     }
 
     /// <summary>
