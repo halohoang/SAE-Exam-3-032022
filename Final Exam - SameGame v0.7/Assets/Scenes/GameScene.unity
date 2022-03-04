@@ -309,6 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1387857706}
   - component: {fileID: 1387857707}
+  - component: {fileID: 1387857708}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -420,3 +421,62 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+--- !u!114 &1387857708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387857705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c36a9db533ad7949b97f2b981af37b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReleasedState: {fileID: 2800000, guid: 2ed0cc73568778b4a8b7a618fd992591, type: 3}
+  PressedState: {fileID: 2800000, guid: d3c9eecea4c36eb4988a6edb732b596e, type: 3}
+--- !u!1 &1544805269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1544805271}
+  - component: {fileID: 1544805270}
+  m_Layer: 0
+  m_Name: MouseControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1544805270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544805269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c36a9db533ad7949b97f2b981af37b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReleasedState: {fileID: 0}
+  PressedState: {fileID: 0}
+--- !u!4 &1544805271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544805269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
